@@ -46,6 +46,12 @@
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css';
+import bg1 from '../assets/background-1-min.png';
+import fg1 from '../assets/foreground-1-min.png';
+import bg2 from '../assets/background-2-min.png';
+import fg2 from '../assets/foreground-2-min.png';
+
+
 
 export default {
 	name: 'Slider',
@@ -56,22 +62,22 @@ export default {
 			{
 				title: 'Slide #1',
 				content: 'CONNECTING HEAD HEART HAND',
-				background: '/src/assets/background-1-min.png',
-				foreground: '/src/assets/foreground-1-min.png',
+				background: bg1,
+				foreground: fg1,
 				isActive: false,
 			},
 			{
 				title: 'Slide #2',
 				content: 'Slide 2 content.',
-				background: '/src/assets/background-2-min.png',
-				foreground: '/src/assets/foreground-2-min.png',
+				background: bg2,
+				foreground: fg1,
 				isActive: false,
 			},
 			{
 				title: 'Slide #3',
 				content: 'Slide 3 content.',
-				background: '/src/assets/background-2-min.png',
-				foreground: '/src/assets/foreground-1-min.png',
+				background: bg2,
+				foreground: fg1,
 				isActive: false,
 			},
 		],
