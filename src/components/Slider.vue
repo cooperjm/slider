@@ -120,12 +120,17 @@ export default {
 	overflow: hidden;
 }
 
+
+.slider-foreground,
+.slider-content,
+.slider-background,
 .vueperslide .slider-content-container,
 .vueperslide .slider-background-container,
 .vueperslide .slider-foreground-container {
 	position: absolute;
 	inset: 0;
 	background-size: cover;
+	background-repeat: no-repeat;
 	/* transition: all 1000ms ease-in-out; */
 	transition-delay: var(--delay);
 	overflow: hidden !important;
