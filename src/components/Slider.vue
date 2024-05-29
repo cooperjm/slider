@@ -68,9 +68,9 @@ export default {
 			},
 			{
 				title: 'Slide #2',
-				content: 'Slide 2 content.',
-				background: bg2,
-				foreground: fg1,
+				content: 'WHAT CAN WE DO FOR YOU',
+				background: 'https://stressmastedev.wpengine.com/wp-content/uploads/2023/09/red-dude-bg-min.png',
+				foreground: 'https://stressmastedev.wpengine.com/wp-content/uploads/2023/09/red-dude-min.png',
 				isActive: false,
 			},
 			{
@@ -115,10 +115,6 @@ export default {
 	stroke-width: 2px;
 }
 
-/* .slider-container {
-	max-height: 80vh;
-	
-} */
 .vueperslides {
 	--delay: 0ms;
 }
@@ -164,24 +160,33 @@ export default {
 	transform: translateX(-25%);
 }
 
+.vueperslide--visible .s-foreground-1,
 .vueperslide--visible .s-foreground-0 {
 	opacity: 1;
 	transform: translateX(0);
 }
 
+.vueperslide--visible .s-content-1,
 .vueperslide--visible .s-content-0 {
 	opacity: 1;
 	transform: translateX(15%);
 }
 
+.vueperslide--visible .s-foreground-1,
 .vueperslide--visible .s-foreground-0 {
 	opacity: 1;
 }
+.s-content-1,
 .s-content-0 {
 	opacity: 1;
 	/* transform: translateX(15%); */
 }
 
+.c-1 h2 {
+	width: 11ch;
+	color: white;
+	font-size: clamp(2rem, -1.5rem + 8vw, 6rem);
+}
 .c-0 h2 {
 	width: 5ch;
 	color: white;
